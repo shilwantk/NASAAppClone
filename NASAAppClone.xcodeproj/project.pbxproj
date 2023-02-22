@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		4674CB3829A4F2DA0032391A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB3729A4F2DA0032391A /* AppDelegate.swift */; };
 		4674CB3A29A4F2DA0032391A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB3929A4F2DA0032391A /* SceneDelegate.swift */; };
-		4674CB3C29A4F2DA0032391A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB3B29A4F2DA0032391A /* ViewController.swift */; };
+		4674CB3C29A4F2DA0032391A /* ImageListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB3B29A4F2DA0032391A /* ImageListVC.swift */; };
 		4674CB3F29A4F2DA0032391A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4674CB3D29A4F2DA0032391A /* Main.storyboard */; };
 		4674CB4129A4F2DB0032391A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4674CB4029A4F2DB0032391A /* Assets.xcassets */; };
 		4674CB4429A4F2DB0032391A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4674CB4229A4F2DB0032391A /* LaunchScreen.storyboard */; };
 		4674CB4F29A4F2DC0032391A /* NASAAppCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB4E29A4F2DC0032391A /* NASAAppCloneTests.swift */; };
 		4674CB5929A4F2DC0032391A /* NASAAppCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB5829A4F2DC0032391A /* NASAAppCloneUITests.swift */; };
 		4674CB5B29A4F2DC0032391A /* NASAAppCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB5A29A4F2DC0032391A /* NASAAppCloneUITestsLaunchTests.swift */; };
+		4674CB6D29A4F61A0032391A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB6C29A4F61A0032391A /* Image.swift */; };
+		4674CB7129A4F71F0032391A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB7029A4F71F0032391A /* APICaller.swift */; };
+		4674CB7329A4F7580032391A /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB7229A4F7580032391A /* ImageListViewModel.swift */; };
+		4674CB7629A509190032391A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB7529A509190032391A /* ImageCell.swift */; };
+		4674CB7729A521DB0032391A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4674CB6B29A4F3C00032391A /* Data.json */; };
+		4674CB7A29A5403F0032391A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4674CB7929A5403F0032391A /* Kingfisher */; };
+		4674CB7C29A5431D0032391A /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB7B29A5431D0032391A /* DetailVC.swift */; };
+		4674CB7E29A5654F0032391A /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB7D29A5654F0032391A /* ImageTests.swift */; };
+		4674CB8029A5666B0032391A /* ImageListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB7F29A5666B0032391A /* ImageListViewModelTests.swift */; };
+		4674CB8229A56EE10032391A /* DetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB8129A56EE10032391A /* DetailImageCell.swift */; };
+		4674CB8429A5D40F0032391A /* ImageCardsCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674CB8329A5D40F0032391A /* ImageCardsCollectionFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +50,7 @@
 		4674CB3429A4F2DA0032391A /* NASAAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4674CB3729A4F2DA0032391A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4674CB3929A4F2DA0032391A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4674CB3B29A4F2DA0032391A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4674CB3B29A4F2DA0032391A /* ImageListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListVC.swift; sourceTree = "<group>"; };
 		4674CB3E29A4F2DA0032391A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4674CB4029A4F2DB0032391A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4674CB4329A4F2DB0032391A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,16 @@
 		4674CB5429A4F2DC0032391A /* NASAAppCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAAppCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4674CB5829A4F2DC0032391A /* NASAAppCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAAppCloneUITests.swift; sourceTree = "<group>"; };
 		4674CB5A29A4F2DC0032391A /* NASAAppCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAAppCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4674CB6B29A4F3C00032391A /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		4674CB6C29A4F61A0032391A /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		4674CB7029A4F71F0032391A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		4674CB7229A4F7580032391A /* ImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
+		4674CB7529A509190032391A /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		4674CB7B29A5431D0032391A /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		4674CB7D29A5654F0032391A /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
+		4674CB7F29A5666B0032391A /* ImageListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModelTests.swift; sourceTree = "<group>"; };
+		4674CB8129A56EE10032391A /* DetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageCell.swift; sourceTree = "<group>"; };
+		4674CB8329A5D40F0032391A /* ImageCardsCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardsCollectionFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4674CB7A29A5403F0032391A /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +121,13 @@
 		4674CB3629A4F2DA0032391A /* NASAAppClone */ = {
 			isa = PBXGroup;
 			children = (
-				4674CB3729A4F2DA0032391A /* AppDelegate.swift */,
-				4674CB3929A4F2DA0032391A /* SceneDelegate.swift */,
-				4674CB3B29A4F2DA0032391A /* ViewController.swift */,
+				4674CB7429A4F7610032391A /* VCs */,
+				4674CB6F29A4F7120032391A /* ServiceManager */,
+				4674CB6E29A4F6FD0032391A /* Delegates */,
+				4674CB6A29A4F3030032391A /* ViewModels */,
+				4674CB6929A4F2FE0032391A /* Views */,
+				4674CB6829A4F2F70032391A /* Models */,
+				4674CB6729A4F2EF0032391A /* Data */,
 				4674CB3D29A4F2DA0032391A /* Main.storyboard */,
 				4674CB4029A4F2DB0032391A /* Assets.xcassets */,
 				4674CB4229A4F2DB0032391A /* LaunchScreen.storyboard */,
@@ -114,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				4674CB4E29A4F2DC0032391A /* NASAAppCloneTests.swift */,
+				4674CB7D29A5654F0032391A /* ImageTests.swift */,
+				4674CB7F29A5666B0032391A /* ImageListViewModelTests.swift */,
 			);
 			path = NASAAppCloneTests;
 			sourceTree = "<group>";
@@ -125,6 +153,66 @@
 				4674CB5A29A4F2DC0032391A /* NASAAppCloneUITestsLaunchTests.swift */,
 			);
 			path = NASAAppCloneUITests;
+			sourceTree = "<group>";
+		};
+		4674CB6729A4F2EF0032391A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4674CB6B29A4F3C00032391A /* Data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4674CB6829A4F2F70032391A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4674CB6C29A4F61A0032391A /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4674CB6929A4F2FE0032391A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4674CB7529A509190032391A /* ImageCell.swift */,
+				4674CB8129A56EE10032391A /* DetailImageCell.swift */,
+				4674CB8329A5D40F0032391A /* ImageCardsCollectionFlowLayout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4674CB6A29A4F3030032391A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4674CB7229A4F7580032391A /* ImageListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4674CB6E29A4F6FD0032391A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				4674CB3729A4F2DA0032391A /* AppDelegate.swift */,
+				4674CB3929A4F2DA0032391A /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		4674CB6F29A4F7120032391A /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				4674CB7029A4F71F0032391A /* APICaller.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		4674CB7429A4F7610032391A /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				4674CB3B29A4F2DA0032391A /* ImageListVC.swift */,
+				4674CB7B29A5431D0032391A /* DetailVC.swift */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +231,9 @@
 			dependencies = (
 			);
 			name = NASAAppClone;
+			packageProductDependencies = (
+				4674CB7929A5403F0032391A /* Kingfisher */,
+			);
 			productName = NASAAppClone;
 			productReference = 4674CB3429A4F2DA0032391A /* NASAAppClone.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +306,9 @@
 				Base,
 			);
 			mainGroup = 4674CB2B29A4F2DA0032391A;
+			packageReferences = (
+				4674CB7829A5403F0032391A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4674CB3529A4F2DA0032391A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4674CB7729A521DB0032391A /* Data.json in Resources */,
 				4674CB4429A4F2DB0032391A /* LaunchScreen.storyboard in Resources */,
 				4674CB4129A4F2DB0032391A /* Assets.xcassets in Resources */,
 				4674CB3F29A4F2DA0032391A /* Main.storyboard in Resources */,
@@ -258,8 +353,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4674CB3C29A4F2DA0032391A /* ViewController.swift in Sources */,
+				4674CB7329A4F7580032391A /* ImageListViewModel.swift in Sources */,
+				4674CB8429A5D40F0032391A /* ImageCardsCollectionFlowLayout.swift in Sources */,
+				4674CB3C29A4F2DA0032391A /* ImageListVC.swift in Sources */,
+				4674CB6D29A4F61A0032391A /* Image.swift in Sources */,
 				4674CB3829A4F2DA0032391A /* AppDelegate.swift in Sources */,
+				4674CB7129A4F71F0032391A /* APICaller.swift in Sources */,
+				4674CB8229A56EE10032391A /* DetailImageCell.swift in Sources */,
+				4674CB7C29A5431D0032391A /* DetailVC.swift in Sources */,
+				4674CB7629A509190032391A /* ImageCell.swift in Sources */,
 				4674CB3A29A4F2DA0032391A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +371,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4674CB4F29A4F2DC0032391A /* NASAAppCloneTests.swift in Sources */,
+				4674CB7E29A5654F0032391A /* ImageTests.swift in Sources */,
+				4674CB8029A5666B0032391A /* ImageListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +700,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4674CB7829A5403F0032391A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4674CB7929A5403F0032391A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4674CB7829A5403F0032391A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4674CB2C29A4F2DA0032391A /* Project object */;
 }
